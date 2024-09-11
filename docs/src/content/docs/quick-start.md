@@ -1,80 +1,45 @@
-
-<div align="center">
-  <h2>
-   Welcome to Manga Hook, your own manga API. </br>
-  </h2>
-  <p>
-  Welcome to Manga Hook, your go-to API for accessing a vast repository of manga data freely. Manga Hook is designed to streamline the process of retrieving manga information, offering features such as search, fetching all manga, fetching a single manga, retrieving manga chapters, and obtaining images from a specific chapter.
-  </p>
-  <br />
-
-</div>
-<h4 align="center">
-  <a href="https://mangahook.vercel.app">Demo</a> |
-  <a href="https://mangahook-api.vercel.app">Documentation</a>
-</h4>
-
-<a href="https://mangahook.vercel.app" target="_blank" rel="noopener">
-  <picture>
-    <img alt="Manga Hook" src="https://mangahook-api.vercel.app/screenshot/list.png" />
-  </picture>
-</a>
-
-## Features
-
--📚 get all manga <br/>
--ℹ️ get single manga detail <br/>
--📖 get chapter list including images <br/>
--🔍 search support <br/>
--🔥 Nextjs exemple with ready to use hooks <br/>
-
-## Quick start
+---
+title: Getting Started
+description: Get started with Manga Hook API in just a few simple steps. Clone the repository, navigate to the server directory, install dependencies, and start the Express server. Once set up, explore and integrate Manga Hook seamlessly into your projects, accessing a vast repository of manga data through provided API endpoints. Enhance your manga-related applications effortlessly with Manga Hook.
+---
 
 Follow these simple steps to get Manga Hook up and running on your local machine:
 
-### 1.  **Clone the Repository:**
+### 1. **Clone the Repository:**
 
-Open your terminal and run the following command to clone the Manga Hook repository:
+   Open your terminal and run the following command to clone the Manga Hook repository:
 
-Terminal window
+   ```bash
+   git clone https://github.com/kiraaziz/mangahook-api
+   ```
 
-```bash
-git  clone  https://github.com/kiraaziz/mangahook-api
-```
+### 2. **Navigate to the Server Directory:**
 
-### 2.  **Navigate to the Server Directory:**
+   Change your working directory to the server folder:
 
-Change your working directory to the server folder:
+   ```bash
+   cd server
+   ```
 
-Terminal window
+### 3. **Install Dependencies:**
 
-```bash
-cd  server
-```
+   Install the required dependencies using npm:
 
-### 3.  **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-Install the required dependencies using npm:
+### 4. **Start the Express Server:**
 
-Terminal window
+   Launch the Manga Hook server by running the following command:
 
-```bash
-npm  install
-```
+   ```bash
+   npm run start
+   ```
 
-### 4.  **Start the Express Server:**
+   This will start the server on port 3000.
 
-Launch the Manga Hook server by running the following command:
-
-Terminal window
-
-```bash
-npm  run  start
-```
-
-This will start the server on port 3000.
-
-Now that Manga Hook is running, let’s explore how to retrieve manga data.
+Now that Manga Hook is running, let's explore how to retrieve manga data.
 
 ## List Manga
 
@@ -82,10 +47,9 @@ To list available manga, make a GET request to the following endpoint using a to
 
 - **Endpoint:**
 
-    ```http
-    GET http://localhost:3000/api/mangaList
-    ```
-
+  ```http
+  GET http://localhost:3000/api/mangaList
+  ```
 - **Example Response:**
 
     ```json
